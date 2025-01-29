@@ -1,2 +1,2 @@
-# testportfolio
-test portfolio for learning html / css in class
+# classPortfolio
+portfolio for learning html / css in class
