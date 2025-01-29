@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="../styles/navbar.css">
   <link rel="stylesheet" href="../styles/generic.css">
+  <link rel="stylesheet" href="../styles/collapsible.css">
     <meta charset="UTF-8">
     <title>About Me</title>
 </head>
@@ -25,23 +26,65 @@
       </div>
       <div class="text">
         <h1>About Me</h1>
-        <p>Hello I am Lucas!<br/>
-          I am a student at Estiam, Bourges<br/>
-          This is a project for studying HTML!<br/>
-          <br/>
-          Here you can find my socials!
+        <p>Hello I am Lucas.<br/>
+          I am a 1st year student at Estiam, Bourges
         </p>
+        <br/>
       </div>
-      <div class="cards-group">
-        <div class="card" onclick="window.open('https://github.com/Joordy18')">
-          <div class ="card-info" id="GitHub">
-            <p>GitHub</p>
-            <img src="../assets/img/github.png" alt="GitHub"></div>
+      <div class="wrap-collabsible">
+        <input id="certifs" class="toggle" type="checkbox">
+        <label for="certifs" class="lbl-toggle">Qualifications</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <div class="cards-group">
+              <div class="card" onclick="window.open('../assets/docs/certif_itEssentials.pdf')">
+                <div class="card-info" id="itEssentials">
+                  <p>itEssentials</p>
+                  <img src="../assets/img/badge_itEssentials.png" alt="itEssentials">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card" onclick="window.open('https://www.linkedin.com/in/lucas-arcizet-85530b2b5/')">
-          <div class ="card-info" id="LinkedIn">
-            <p>LinkedIn</p>
-            <img src="../assets/img/linkedin.png" alt="LinkedIn"></div>
+      </div>
+      <br/>
+      <div class="wrap-collabsible">
+        <input id="techstack" class="toggle" type="checkbox">
+        <label for="techstack" class="lbl-toggle">Tech Stack</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <div align="center">
+              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" title="HTML"/></code>
+              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" title="CSS"/></code>
+              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="JavaScript" title="JavaScript"/></code>
+              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" title="C"/></code>
+              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c++.png" alt="C++" title="C++"/></code>
+              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python" title="Python"/></code>
+              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mysql.png" alt="MySQL" title="MySQL"/></code>
+              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mariadb.png" alt="MariaDB" title="MariaDB"/></code>
+            </div>
+        </div>
+      </div>
+      <br/>
+      <div class="wrap-collabsible">
+        <input id="socials" class="toggle" type="checkbox">
+        <label for="socials" class="lbl-toggle">Socials</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <div class="cards-group">
+              <div class="card" onclick="window.open('https://github.com/Joordy18')">
+                <div class ="card-info" id="GitHub">
+                  <p>GitHub</p>
+                  <img src="../assets/img/github.png" alt="GitHub">
+                </div>
+              </div>
+              <div class="card" onclick="window.open('https://www.linkedin.com/in/lucas-arcizet-85530b2b5/')">
+                <div class ="card-info" id="LinkedIn">
+                  <p>LinkedIn</p>
+                  <img src="../assets/img/linkedin.png" alt="LinkedIn"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
