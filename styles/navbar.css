@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
 header {
     background-color: black;
     margin: -28px -8px 0 -8px;
@@ -11,9 +14,8 @@ nav {
     align-items: end;
 }
 
-
 nav a {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 20px;
     padding: 40px;
     outline: none;
@@ -23,15 +25,8 @@ nav a {
     gap: 10px;
 }
 
-nav a:focus {
+nav a:focus, nav a:hover {
     border-bottom: 1px solid;
-    background: #e49217;
-    color: white;
-}
-
-nav a:hover {
-    border-bottom: 1px solid;
-    background: #e49217;
     color: white;
 }
 
