@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
 body::-webkit-scrollbar {
     display: none;
 }
@@ -11,17 +10,17 @@ body {
 }
 
 footer {
-    margin-top: 2vh;
+    margin-top: 2vh; /* Adjusted to be responsive to viewport height */
     background-color: black;
     text-align: center;
     font-weight: bold;
     color: white;
-    font-size: 2vh;
+    font-size: 2vh; /* Adjusted to be responsive to viewport height */
     bottom: 0;
     left: 0;
     right: 0;
     position: fixed;
-    height: 5vh;
+    height: 5vh; /* Adjusted to be responsive to viewport height */
 }
 
 h1 {
@@ -45,6 +44,7 @@ h1 {
     width: 100%;
     padding: 10px;
 }
+
 
 .cards-group {
     display: flex;
@@ -108,6 +108,7 @@ h1 {
     z-index: 1;
 }
 
+
 .card .title {
     font-weight: bold;
     letter-spacing: .1em;
@@ -138,7 +139,7 @@ h1 {
 }
 
 .text h1 {
-    font-size: 7vh;
+    font-size : 7vh;
     color: white;
     text-align: center;
 }
@@ -155,40 +156,4 @@ h1 {
     color: white;
     text-align: center;
     margin: 1px;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 767px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .cards-group {
-        display: block;
-        margin-top: 20px;
-    }
-
-    .card {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .card-info img {
-        height: auto;
-        width: 100%;
-    }
-
-    .text h1 {
-        font-size: 5vh;
-    }
-
-    .text p, .text a {
-        font-size: 2.5vh;
-    }
-
-    footer {
-        font-size: 1.5vh;
-    }
 }
