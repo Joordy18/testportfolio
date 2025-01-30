@@ -1,0 +1,10 @@
+img {
+    height:30vh;
+    width:35vh;
+    border-radius: 2em;
+}
+
+#stack img {
+    height: 7vh;
+    width: 7vh;
+}

@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="../styles/navbar.css">
   <link rel="stylesheet" href="../styles/generic.css">
   <link rel="stylesheet" href="../styles/collapsible.css">
+    <link rel="stylesheet" href="../styles/about.css">
     <meta charset="UTF-8">
     <title>About Me</title>
 </head>
@@ -21,9 +22,7 @@
   <br/>
   <div class="container">
     <div class="content">
-      <div class="image">
-        <img src="../assets/img/cat-cat-meme.gif" height="150" width="175" alt="This is me btw">
-      </div>
+        <img src="../assets/img/cat-cat-meme.gif" id="imgme" alt="This is me btw">
       <div class="text">
         <h1>About Me</h1>
         <p>Hello I am Lucas.<br/>
@@ -53,7 +52,7 @@
         <label for="techstack" class="lbl-toggle">Tech Stack</label>
         <div class="collapsible-content">
           <div class="content-inner">
-            <div align="center">
+            <div id="stack" align="center">
               <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" title="HTML"/></code>
               <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" title="CSS"/></code>
               <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="JavaScript" title="JavaScript"/></code>
@@ -92,11 +91,13 @@
           <label for="workhistory" class="lbl-toggle">Professional Bio</label>
           <div class="collapsible-content">
             <div class="content-inner">
-              <p>⦁ October 2024 &rightarrow; 2029 - Estiam Bourges, Bac+5<br/>
-                ⦁ September &rightarrow; October 2023 - Work in Bakery<br/>
-                ⦁ Bac Général June 2023<br/>
-                ⦁ Brevet June 2020<br/>
-              </p>
+                <div class="text">
+                    <p>⦁ October 2024 &rightarrow; 2029 - Estiam Bourges, Bac+5<br/>
+                        ⦁ September &rightarrow; October 2023 - Work in Bakery<br/>
+                        ⦁ Bac Général June 2023<br/>
+                        ⦁ Brevet June 2020<br/>
+                    </p>
+                </div>
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ nav {
 
 nav a {
     font-family: "Roboto";
-    font-size: 20px;
+    font-size: 5vh;
     padding: 40px;
     outline: none;
     text-decoration: none;
@@ -31,5 +31,5 @@ nav a:focus, nav a:hover {
 }
 
 .nom a {
-    font-size: 30px;
+    font-size: 6.5vh;
 }
