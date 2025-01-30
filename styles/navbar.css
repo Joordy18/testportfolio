@@ -11,25 +11,35 @@ nav {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
 }
 
 nav a {
+    float: left;
     font-family: "Roboto";
     font-size: 5vh;
     padding: 40px;
     outline: none;
     text-decoration: none;
     color: white;
-    display: flex;
+    display: block;
     gap: 10px;
 }
 
 nav a:focus, nav a:hover {
     border-bottom: 1px solid;
-    color: white;
+    color: #465c61;
 }
 
 .nom a {
     font-size: 6.5vh;
+}
+
+.nav a.active {
+    border-bottom: 1px solid;
+    color: #465c61;
+}
+
+.nav .icon {
+    display: none;
 }

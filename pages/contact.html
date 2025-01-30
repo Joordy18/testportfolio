@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="../styles/navbar.css">
   <link rel="stylesheet" href="../styles/contact.css">
   <link rel="stylesheet" href="../styles/generic.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="../scripts/formScript.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -20,27 +21,13 @@
     <a href="contact.html">Contact</a>
   </nav>
 </header>
+<div class="text"><h1>Contact me</h1></div>
 <div class="container">
-  <div class="content">
-    <div class="text"><p>To contact me please click this button below</p></div>
-    <button class="contactButton" onClick="location.href='mailto:lucas.arcizet@estiam.com'">
-      Contact
-      <div class="iconButton">
-        <svg
-                height="24"
-                width="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 0h24v24H0z" fill="none"></path>
-          <path
-                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                  fill="currentColor"
-          ></path>
-        </svg>
-      </div>
-    </button>
-  </div>
+    <form class="form">
+      <input type="text" placeholder="Your email" class="input">
+      <textarea placeholder="Your message"></textarea>
+      <button onClick="alert('Mail sent!')">Submit</button>
+    </form>
 </div>
 </body>
 <footer>
