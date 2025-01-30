@@ -20,19 +20,25 @@
   </nav>
 </header>
 <div class="container">
-  <div class="contact">
-    <p>To contact me :</p>
-    <a href="mailto:lucas.arcizet@estiam.com?cc=&bcc=&subject=&body=">Click Here</a>
-    <!--<p>Or:</p>
-    <form id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" cols="33" required></textarea>
-      <input type="submit" value="Send" id="send">
-    </form>!-->
+  <div class="content">
+    <div class="text"><p>To contact me please click this button below</p></div>
+    <button class="contactButton" onClick="location.href='mailto:lucas.arcizet@estiam.com'">
+      Contact
+      <div class="iconButton">
+        <svg
+                height="24"
+                width="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path
+                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </button>
   </div>
 </div>
 </body>
