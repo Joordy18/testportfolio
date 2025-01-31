@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="../styles/navbar.css">
-  <link rel="stylesheet" href="../styles/contact.css">
-  <link rel="stylesheet" href="../styles/generic.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="../scripts/formScript.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Contact</title>
-</head>
-<body>
-<header>
-  <nav>
-    <div class="nom">
-      <a href="../index.html">Lucas</a>
-    </div>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About Me</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<div class="main-content">
-  <div class="container">
-    <div class="contact-container">
-      <div class="contact-header">
-        <h1>Get In Touch</h1>
-        <p>Feel free to reach out for collaborations or just a friendly hello</p>
+  <head>
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/generic.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../scripts/formScript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nom">
+          <a href="../index.html">Lucas</a>
+        </div>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <div class="main-content">
+      <div class="container">
+        <div class="contact-container">
+          <div class="contact-header">
+            <h1>Get In Touch</h1>
+            <p>
+              Feel free to reach out for collaborations or just a friendly hello
+            </p>
+          </div>
+          <form class="form" onSubmit="return false;">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button onClick="alert('Message sent successfully!')">
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
-      <form class="form" onSubmit="return false;">
-        <input 
-          type="text" 
-          placeholder="Your Name" 
-          required
-        >
-        <input 
-          type="email" 
-          placeholder="Your Email" 
-          required
-        >
-        <textarea 
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <button onClick="alert('Message sent successfully!')">Send Message</button>
-      </form>
     </div>
-  </div>
-</div>
-<footer>
-  <p>&copy; Lucas' Portfolio - 2025</p>
-</footer>
-</body>
+    <footer>
+      <p>&copy; Lucas' Portfolio - 2025</p>
+    </footer>
+  </body>
 </html>
