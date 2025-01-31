@@ -3,6 +3,12 @@ body::-webkit-scrollbar {
 }
 
 /* From Uiverse.io by Yaya12085 */
+.contact-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
 .form {
     position: relative;
     display: flex;
@@ -16,36 +22,87 @@ body::-webkit-scrollbar {
     border-radius: 1vh;
     box-shadow: 0 3.6vh 3.6vh -3.6vh rgba(27, 26, 26, 0.315);
     align-self: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.form input {
-    outline: 0;
-    border: 1px solid rgb(219, 213, 213);
-    padding: .95vh 1.6vh;
-    border-radius: .95vh;
+.form input,
+.form textarea {
     width: 100%;
-    height: 6vh;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
 }
 
 .form textarea {
-    border-radius: .95vh;
-    height: 12vh;
-    width: 100%;
-    resize: none;
-    outline: 0;
-    padding: .95vh 1.6vh;
-    border: .1vh solid rgb(219, 213, 213);
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #465c61;
+    transform: translateY(-2px);
 }
 
 .form button {
-    align-self: flex-end;
-    padding: .95vh;
-    outline: 0;
-    border: 0;
-    border-radius: .95vh;
-    font-size: 1.9vh;
-    font-weight: 500;
-    background-color: #3f4650;
-    color: #fff;
+    background-color: #465c61;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+}
+
+.form button:hover {
+    background-color: #5a7378;
+    transform: translateY(-2px);
+}
+
+.form button:active {
+    transform: translateY(0);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+}
+
+.contact-header p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #DAC8BE;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 1rem;
+    }
+    
+    .form {
+        padding: 1.5rem;
+    }
 }

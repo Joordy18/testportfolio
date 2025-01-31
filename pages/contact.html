@@ -21,16 +21,35 @@
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-<div class="text"><h1>Contact me</h1></div>
-<div class="container">
-    <form class="form">
-      <input type="text" placeholder="Your email" class="input">
-      <textarea placeholder="Your message"></textarea>
-      <button onClick="alert('Mail sent!')">Submit</button>
-    </form>
+<div class="main-content">
+  <div class="container">
+    <div class="contact-container">
+      <div class="contact-header">
+        <h1>Get In Touch</h1>
+        <p>Feel free to reach out for collaborations or just a friendly hello</p>
+      </div>
+      <form class="form" onSubmit="return false;">
+        <input 
+          type="text" 
+          placeholder="Your Name" 
+          required
+        >
+        <input 
+          type="email" 
+          placeholder="Your Email" 
+          required
+        >
+        <textarea 
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button onClick="alert('Message sent successfully!')">Send Message</button>
+      </form>
+    </div>
+  </div>
 </div>
-</body>
 <footer>
   <p>&copy; Lucas' Portfolio - 2025</p>
 </footer>
+</body>
 </html>

@@ -1,4 +1,4 @@
-    input[type='checkbox'] {
+input[type='checkbox'] {
     display: none;
 }
 
@@ -7,23 +7,24 @@
 
     font-weight: bold;
     font-family: monospace;
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     text-transform: uppercase;
     text-align: center;
 
     padding: 1rem;
 
-    color: black;
+    color: white;
     background: #3f4650;
 
     cursor: pointer;
 
-    border-radius: 7px;
+    border-radius: 8px;
     transition: all 0.25s ease-out;
+    margin-top: 1rem;
 }
 
 .lbl-toggle:hover {
-    color: white;
+    background: #4a5258;
 }
 
 .lbl-toggle::before {
@@ -47,14 +48,16 @@
 
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-    padding: .5rem 1rem;
+    padding: 1rem;
 }
 
 .collapsible-content {
-    max-height: 0px;
+    max-height: 0;
     overflow: hidden;
 
-    transition: max-height .25s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
+    background: #3f4650;
+    border-radius: 0 0 8px 8px;
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {

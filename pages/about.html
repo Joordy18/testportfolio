@@ -4,7 +4,6 @@
   <link rel="stylesheet" href="../styles/navbar.css">
   <link rel="stylesheet" href="../styles/generic.css">
   <link rel="stylesheet" href="../styles/collapsible.css">
-    <link rel="stylesheet" href="../styles/about.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -21,89 +20,113 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <br/>
-  <div class="text"><h1>About Me</h1></div>
-  <div class="container">
-    <div class="content">
-        <img src="../assets/img/cat-cat-meme.gif" id="imgme" alt="This is me btw">
-      <div class="text">
-        <p>Hello I am Lucas.<br/>
-          I am a 1st year student at Estiam, Bourges
-        </p>
-        <br/>
+  <div class="main-content">
+    <div class="container">
+      <div class="about-header">
+        <h1>About Me</h1>
       </div>
-      <div class="wrap-collabsible">
-        <input id="certifs" class="toggle" type="checkbox">
-        <label for="certifs" class="lbl-toggle">Qualifications</label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <div class="cards-group">
-              <div class="card" onclick="window.open('../assets/docs/certif_itEssentials.pdf')">
-                <div class="card-info" id="itEssentials">
-                  <p>itEssentials</p>
-                  <img src="../assets/img/badge_itEssentials.png" alt="itEssentials">
+      <div class="content">
+        <div class="about-intro">
+          <div class="profile-image">
+            <img src="../assets/img/cat-cat-meme.gif" alt="This is me btw">
+          </div>
+          <div class="about-text">
+            <h2>Hello, I'm Lucas</h2>
+            <p>I am a 1st year student at Estiam, Bourges, passionate about technology and software development.</p>
+          </div>
+        </div>
+        <div class="about-content">
+          <!-- Tech Stack Section -->
+          <div class="wrap-collabsible">
+            <input id="techstack" class="toggle" type="checkbox">
+            <label for="techstack" class="lbl-toggle">Tech Stack</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <div class="tech-stack-grid">
+                  <div class="tech-item">
+                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" title="HTML"/>
+                  </div>
+                  <div class="tech-item">
+                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" title="CSS"/>
+                  </div>
+                  <div class="tech-item">
+                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="JavaScript" title="JavaScript"/>
+                  </div>
+                  <div class="tech-item">
+                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" title="C"/>
+                  </div>
+                  <div class="tech-item">
+                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c++.png" alt="C++" title="C++"/>
+                  </div>
+                  <div class="tech-item">
+                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python" title="Python"/>
+                  </div>
+                  <div class="tech-item">
+                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mysql.png" alt="MySQL" title="MySQL"/>
+                  </div>
+                  <div class="tech-item">
+                    <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mariadb.png" alt="MariaDB" title="MariaDB"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Qualifications Section -->
+          <div class="wrap-collabsible">
+            <input id="certifs" class="toggle" type="checkbox">
+            <label for="certifs" class="lbl-toggle">Qualifications</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <div class="section-grid">
+                  <div class="card" onclick="window.open('../assets/docs/certif_itEssentials.pdf')">
+                    <div class="card-info">
+                      <p>IT Essentials</p>
+                      <img src="../assets/img/badge_itEssentials.png" alt="IT Essentials">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Bio Section -->
+          <div class="wrap-collabsible">
+            <input id="workhistory" class="toggle" type="checkbox">
+            <label for="workhistory" class="lbl-toggle">Professional Bio</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <ul class="bio-list">
+                  <li>October 2024 → 2029 - Estiam Bourges, Bac+5</li>
+                  <li>September → October 2023 - Work in Bakery</li>
+                  <li>Bac Général June 2023</li>
+                  <li>Brevet June 2020</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Social Links Section -->
+          <div class="wrap-collabsible">
+            <input id="socials" class="toggle" type="checkbox">
+            <label for="socials" class="lbl-toggle">Connect with Me</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <div class="section-grid">
+                  <div class="card" onclick="window.open('https://github.com/Joordy18')">
+                    <div class="card-info">
+                      <p>GitHub</p>
+                      <img src="../assets/img/github.png" alt="GitHub">
+                    </div>
+                  </div>
+                  <div class="card" onclick="window.open('https://www.linkedin.com/in/lucas-arcizet-85530b2b5/')">
+                    <div class="card-info">
+                      <p>LinkedIn</p>
+                      <img src="../assets/img/linkedin.png" alt="LinkedIn">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <br/>
-      <div class="wrap-collabsible">
-        <input id="techstack" class="toggle" type="checkbox">
-        <label for="techstack" class="lbl-toggle">Tech Stack</label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <div id="stack" align="center">
-              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" title="HTML"/></code>
-              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" title="CSS"/></code>
-              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="JavaScript" title="JavaScript"/></code>
-              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" title="C"/></code>
-              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c++.png" alt="C++" title="C++"/></code>
-              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python" title="Python"/></code>
-              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mysql.png" alt="MySQL" title="MySQL"/></code>
-              <code><img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mariadb.png" alt="MariaDB" title="MariaDB"/></code>
-            </div>
-        </div>
-      </div>
-      <br/>
-      <div class="wrap-collabsible">
-        <input id="socials" class="toggle" type="checkbox">
-        <label for="socials" class="lbl-toggle">Socials</label>
-        <div class="collapsible-content">
-          <div class="content-inner">
-            <div class="cards-group">
-              <div class="card" onclick="window.open('https://github.com/Joordy18')">
-                <div class ="card-info" id="GitHub">
-                  <p>GitHub</p>
-                  <img src="../assets/img/github.png" alt="GitHub">
-                </div>
-              </div>
-              <div class="card" onclick="window.open('https://www.linkedin.com/in/lucas-arcizet-85530b2b5/')">
-                <div class ="card-info" id="LinkedIn">
-                  <p>LinkedIn</p>
-                  <img src="../assets/img/linkedin.png" alt="LinkedIn"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br/>
-        <div class="wrap-collabsible">
-          <input id="workhistory" class="toggle" type="checkbox">
-          <label for="workhistory" class="lbl-toggle">Professional Bio</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-                <div class="text">
-                    <p>⦁ October 2024 &rightarrow; 2029 - Estiam Bourges, Bac+5<br/>
-                        ⦁ September &rightarrow; October 2023 - Work in Bakery<br/>
-                        ⦁ Bac Général June 2023<br/>
-                        ⦁ Brevet June 2020<br/>
-                    </p>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   </div>
