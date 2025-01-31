@@ -1,45 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 header {
-    background-color: black;
-    margin: -28px -8px 0 -8px;
-    height: 20%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
 }
 
 nav {
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
-    float: left;
-    font-family: "Roboto";
-    font-size: 5vh;
-    padding: 40px;
-    outline: none;
-    text-decoration: none;
-    color: white;
-    display: block;
-    gap: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
 }
 
-nav a:focus, nav a:hover {
-    border-bottom: 1px solid;
-    color: #465c61;
+nav a:focus,
+nav a:hover {
+  border-bottom: 1px solid;
+  color: #465c61;
 }
 
 .nom a {
-    font-size: 6.5vh;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-weight: bold;
 }
 
 .nav a.active {
-    border-bottom: 1px solid;
-    color: #465c61;
+  border-bottom: 1px solid;
+  color: #465c61;
 }
 
 .nav .icon {
-    display: none;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nom {
+    margin-bottom: 1rem;
+  }
 }
